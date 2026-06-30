@@ -37,7 +37,7 @@ The Kali Linux virtual machine was configured to support:
 | ----------------------- | ---------------------------- |
 | Operating System        | Kali Linux                   |
 | Virtualization Platform | VirtualBox                   |
-| RAM                     | 4 GB                         |
+| RAM                     | 8 GB                         |
 | CPUs                    | 2                            |
 | Disk Size               | 40 GB                        |
 | Network Adapter         | Host-Only / Internal Network |
