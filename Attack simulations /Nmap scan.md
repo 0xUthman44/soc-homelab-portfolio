@@ -144,15 +144,7 @@ Monitoring this activity improves visibility into potential malicious behavior.
 
 ---
 
-# Screenshots
 
-
-
- 
-* Host discovery output
-* Service enumeration output
-* Wazuh alerts
-* Target connectivity verification
 
 ---
 
