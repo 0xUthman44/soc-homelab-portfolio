@@ -68,7 +68,7 @@ Port enumeration against the DVWA server performed using:
 ```bash id="j7x2n5"
 nmap 192.168.56.102
 ```
-<img width="1920" height="167" alt="Screenshot (686)" src="https://github.com/user-attachments/assets/f89f0e74-bd7b-42f1-8bfe-8a303543eb51" />
+<img width="1920" height="164" alt="Screenshot (688)" src="https://github.com/user-attachments/assets/75a6cbd8-e341-46db-819d-e9f7bcf05df3" />
 
 
 This identified open services exposed by the target system.
