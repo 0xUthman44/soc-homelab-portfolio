@@ -70,6 +70,7 @@ Dashboard availability verified using:
 ```bash id="p8n2v4"
 sudo systemctl status wazuh-dashboard
 ```
+<img width="1276" height="785" alt="Screenshot (690)" src="https://github.com/user-attachments/assets/5efd4636-1d37-4d1e-8ef2-ec9adbf56c55" />
 
 This service provides:
 
@@ -89,6 +90,7 @@ Indexer operational status verified using:
 ```bash id="u5m7x1"
 sudo systemctl status wazuh-indexer
 ```
+<img width="1268" height="791" alt="Screenshot (691)" src="https://github.com/user-attachments/assets/7ac86766-fd4c-4916-ae14-d3a15e9a5516" />
 
 The Wazuh Indexer is responsible for:
 
@@ -108,6 +110,7 @@ Dashboard access tested through a web browser using:
 ```text id="j9x4k2"
 https://192.168.56.104
 ```
+<img width="1920" height="820" alt="Screenshot (692)" src="https://github.com/user-attachments/assets/9e120fef-af4f-4646-a7da-29e7c5085712" />
 
 Successful access confirmed:
 
@@ -125,6 +128,7 @@ Internal communication between lab systems was verified using:
 ```bash id="v7q2m8"
 ping 192.168.56.102
 ```
+<img width="1269" height="501" alt="Screenshot (693)" src="https://github.com/user-attachments/assets/45360b89-7203-4594-b5ad-50cd15c06d00" />
 
 This confirmed successful communication with the Wazuh SIEM platform.
 
