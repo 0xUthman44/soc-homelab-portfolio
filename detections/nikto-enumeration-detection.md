@@ -96,7 +96,7 @@ nikto -Version
 The web enumeration scan was performed using:
 
 ```bash id="v9q2m7"
-nikto -h http://192.168.56.20/DVWA
+nikto -h http://192.168.56.102/DVWA
 ```
 <img width="1920" height="525" alt="Screenshot (704)" src="https://github.com/user-attachments/assets/4466f805-22e9-4a72-8818-042a206fc757" />
 
