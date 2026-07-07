@@ -74,7 +74,7 @@ Traffic generated during enumeration was monitored by:
 Internal communication verified using:
 
 ```bash id="u7m2x5"
-ping 192.168.56.20
+ping 192.168.56.102
 ```
 
 Successful communication confirmed connectivity between Kali Linux and the DVWA server.
