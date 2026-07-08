@@ -25,7 +25,7 @@ The primary objectives of this exercise were to:
 
 | Component   | Role                  | IP Address     |
 | ----------- | --------------------- | -------------- |
-| Kali Linux  | Attacker Workstation  | 192.168.56.101 |
+| Kali Linux  | Attacker Workstation  | 192.168.56.103 |
 | Ubuntu DVWA | Vulnerable Web Server | 192.168.56.102 |
 | Wazuh OVA   | SIEM Platform         | 192.168.56.104 |
 | Windows 10  | Monitored Endpoint    | 192.168.56.101 |
