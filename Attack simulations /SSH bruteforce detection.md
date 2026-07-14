@@ -112,7 +112,8 @@ Connectivity from the Kali Linux VM was verified.
 ```bash
 ssh username@192.168.56.102
 ```
-<img width="1920" height="150" alt="Screenshot (725)" src="https://github.com/user-attachments/assets/9caa6c4d-6f34-4700-83cd-ce39fd28aa7a" />
+<img width="1920" height="150" alt="Screenshot (725)" src="https://github.com/user-attachments/assets/bb166d31-aff9-4c54-a2fd-5ff95b4a26f9" />
+
 
 Receiving a password prompt confirmed successful connectivity.
 
