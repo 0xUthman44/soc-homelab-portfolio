@@ -203,7 +203,7 @@ sudo tail -f /var/log/auth.log
 Example events:
 
 ```text
-Failed password for uthman
+Failed password for <username>
 Connection closed
 ```
 
