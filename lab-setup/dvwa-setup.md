@@ -1,4 +1,3 @@
- # DVWA-Setup.md
 # DVWA Deployment
 
 ## Overview
@@ -9,7 +8,7 @@ The application provides intentionally vulnerable web functionality that can be 
 
 ---
 
-# Objective
+## Objective
 
 The primary goals of deploying DVWA were:
 
@@ -22,7 +21,7 @@ The primary goals of deploying DVWA were:
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component  | Role                       |
 | ---------- | -------------------------- |
@@ -34,7 +33,7 @@ The primary goals of deploying DVWA were:
 
 ---
 
-# Deployment Method
+## Deployment Method
 
 DVWA was deployed on a Linux-based virtual machine inside the isolated VirtualBox lab network.
 
@@ -46,7 +45,7 @@ The web application was configured to communicate internally with:
 
 ---
 
-# Apache Installation
+## Apache Installation
 
 Apache web server was installed using:
 
@@ -62,7 +61,7 @@ sudo systemctl status apache2
 
 ---
 
-# PHP Installation
+## PHP Installation
 
 DVWA requires PHP and supporting modules.
 
@@ -74,7 +73,7 @@ sudo apt install php php-mysqli php-gd libapache2-mod-php mariadb-server -y
 
 ---
 
-# DVWA Download
+## DVWA Download
 
 DVWA repository cloned using:
 
@@ -90,7 +89,7 @@ sudo mv DVWA /var/www/html/
 
 ---
 
-# Permissions Configuration
+## Permissions Configuration
 
 Permissions adjusted for Apache:
 
@@ -101,7 +100,7 @@ sudo chmod -R 755 /var/www/html/DVWA
 
 ---
 
-# Database Setup
+## Database Setup
 
 MariaDB service started:
 
@@ -113,7 +112,7 @@ Database initialized through DVWA setup page.
 
 ---
 
-# Network Configuration
+## Network Configuration
 
 DVWA operated inside the internal lab network.
 
@@ -127,7 +126,7 @@ Example addressing:
 | Windows 10  |  192.168.56.101 |
 ---
 
-# Access Verification
+## Access Verification
 
 DVWA successfully accessed from Kali Linux using:
 
@@ -137,7 +136,7 @@ http://192.168.56.102/DVWA
 
 ---
 
-# Attack Simulation Usage
+## Attack Simulation Usage
 
 DVWA was used to generate:
 
@@ -149,7 +148,7 @@ DVWA was used to generate:
 
 ---
 
-# Log Monitoring
+## Log Monitoring
 
 Apache logs monitored by Wazuh:
 
@@ -166,7 +165,7 @@ This enabled:
 
 ---
 
-# Security Relevance
+## Security Relevance
 
 DVWA provides a controlled environment for:
 
@@ -179,7 +178,7 @@ The platform was intentionally isolated from external networks to prevent uninte
 
 ---
 
-# Screenshots
+## Screenshots
 
 Add screenshots here:
 
@@ -188,11 +187,9 @@ Add screenshots here:
  <img width="1920" height="820" alt="Screenshot (681)" src="https://github.com/user-attachments/assets/505e38a5-9e12-4e88-954b-3bc8d91508b3" />
 
 
-
-
 ---
 
-# Learning Outcomes
+## Learning Outcomes
 
 * Web application deployment
 * Apache administration

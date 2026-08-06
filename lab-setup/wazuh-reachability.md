@@ -14,7 +14,7 @@ The verification process ensured that all critical Wazuh services were:
 
 ---
 
-# Objective
+## Objective
 
 The primary goals of this verification process were:
 
@@ -26,7 +26,7 @@ The primary goals of this verification process were:
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component   | Role                  | IP Address     |
 | ----------- | --------------------- | -------------  |
@@ -37,13 +37,13 @@ The primary goals of this verification process were:
 
 ---
 
-# Wazuh Service Verification
+## Wazuh Service Verification
 
 The following commands were used to verify that all core Wazuh services were operational.
 
 ---
 
-# Wazuh Manager Status
+## Wazuh Manager Status
 
 The Wazuh Manager service was verified using:
 
@@ -63,7 +63,7 @@ A successful status output confirmed that the Wazuh Manager was actively running
 
 ---
 
-# Wazuh Dashboard Status
+## Wazuh Dashboard Status
 
 Dashboard availability verified using:
 
@@ -83,7 +83,7 @@ Successful service status confirmed dashboard availability.
 
 ---
 
-# Wazuh Indexer Status
+## Wazuh Indexer Status
 
 Indexer operational status verified using:
 
@@ -103,7 +103,7 @@ Successful status output confirmed indexing functionality.
 
 ---
 
-# Dashboard Reachability
+## Dashboard Reachability
 
 Dashboard access tested through a web browser using:
 
@@ -121,7 +121,7 @@ Successful access confirmed:
 
 ---
 
-# Connectivity Validation
+## Connectivity Validation
 
 Internal communication between lab systems was verified using:
 
@@ -134,7 +134,7 @@ This confirmed successful communication with the Wazuh SIEM platform.
 
 ---
 
-# Operational Importance
+## Operational Importance
 
 Verifying service reachability ensures:
 
@@ -148,11 +148,7 @@ This step was completed prior to attack simulation and detection engineering exe
 
 ---
 
-
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 * Linux service management
 * SIEM operational validation

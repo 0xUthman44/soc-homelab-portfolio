@@ -8,7 +8,7 @@ This exercise generated HTTP traffic that was captured by Apache access logs and
 
 ---
 
-# Objective
+## Objective
 
 The primary objectives of this exercise were to:
 
@@ -21,7 +21,7 @@ The primary objectives of this exercise were to:
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component   | Role                  | IP Address     |
 | ----------- | --------------------- | -------------- |
@@ -32,7 +32,7 @@ The primary objectives of this exercise were to:
 
 ---
 
-# Attack Flow
+## Attack Flow
 
 ```text
 Kali Linux
@@ -51,7 +51,7 @@ Wazuh SIEM
 
 ---
 
-# Step 1 – Verify DVWA Connectivity
+## Step 1 – Verify DVWA Connectivity
 
 Before beginning the enumeration, connectivity to the DVWA web server was verified from the Kali Linux VM.
 
@@ -63,12 +63,9 @@ curl http://192.168.56.102:8080
 A successful HTML response confirmed that the web application was reachable.
 
 
-
-
-
 ---
 
-# Step 2 – Install Gobuster
+## Step 2 – Install Gobuster
 
 Gobuster was installed on the Kali Linux VM using:
 
@@ -86,7 +83,7 @@ gobuster --help
 
 ---
 
-# Step 3 – Locate the Wordlist
+## Step 3 – Locate the Wordlist
 
 Gobuster requires a wordlist to perform directory enumeration.
 
@@ -107,7 +104,7 @@ ls /usr/share/wordlists/dirb/
 
 ---
 
-# Step 4 – Perform Directory Enumeration
+## Step 4 – Perform Directory Enumeration
 
 The enumeration scan was executed using:
 
@@ -120,7 +117,7 @@ Gobuster rapidly requested hundreds of common directory names against the target
 
 ---
 
-# Scan Results
+## Scan Results
 
 The scan successfully discovered several interesting resources, including:
 
@@ -134,7 +131,7 @@ Although access to these resources was restricted, their discovery provided valu
 
 ---
 
-# Apache Log Analysis
+## Apache Log Analysis
 
 To observe the generated traffic, Apache access logs were monitored in real time.
 
@@ -165,7 +162,7 @@ These characteristics are consistent with directory brute-forcing and reconnaiss
 
 ---
 
-# Wazuh Investigation
+## Wazuh Investigation
 
 The generated telemetry was investigated within the Wazuh Dashboard.
 
@@ -196,7 +193,7 @@ This investigation helped identify:
 
 ---
 
-# Detection Indicators
+## Detection Indicators
 
 The following indicators were identified during the investigation.
 
@@ -212,7 +209,7 @@ The following indicators were identified during the investigation.
 
 ---
 
-# SOC Analyst Investigation
+## SOC Analyst Investigation
 
 ## Incident Summary
 
@@ -224,7 +221,7 @@ Although no exploitation occurred, the activity represents the reconnaissance ph
 
 ---
 
-# MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 | Tactic         | Technique                            |
 | -------------- | ------------------------------------ |
@@ -233,7 +230,7 @@ Although no exploitation occurred, the activity represents the reconnaissance ph
 
 ---
 
-# Recommendations
+## Recommendations
 
 Following the investigation, the following defensive measures are recommended:
 
@@ -246,7 +243,7 @@ Following the investigation, the following defensive measures are recommended:
 
 ---
 
-# Issues Encountered
+## Issues Encountered
 
 During this exercise, the following issues were encountered and resolved.
 
@@ -257,10 +254,7 @@ During this exercise, the following issues were encountered and resolved.
 
 ---
 
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 Through this exercise, I gained practical experience with:
 

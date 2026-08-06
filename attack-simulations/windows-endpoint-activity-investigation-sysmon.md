@@ -10,7 +10,7 @@ The objective of this investigation was to reconstruct the sequence of events, a
 
 ---
 
-# Investigation Objectives
+## Investigation Objectives
 
 * Validate Sysmon logging
 * Investigate Sysmon Event ID 1 process creation events
@@ -22,7 +22,7 @@ The objective of this investigation was to reconstruct the sequence of events, a
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component     | Role                | IP Address      |
 | ------------- | ------------------- | --------------  |
@@ -32,7 +32,7 @@ The objective of this investigation was to reconstruct the sequence of events, a
 
 ---
 
-# Environment Architecture
+## Environment Architecture
 
 ```text
 Windows 10 Endpoint
@@ -52,7 +52,7 @@ SOC Investigation
 
 ---
 
-# Detection
+## Detection
 
 Routine monitoring within Wazuh identified multiple Sysmon Process Creation events originating from the monitored Windows endpoint.
 
@@ -81,7 +81,7 @@ The investigation centered on **Sysmon Event ID 1**, which records every process
 
 ---
 
-# Initial Observations
+## Initial Observations
 
 Initial review of Sysmon telemetry identified several legitimate Windows utilities executed within a short time period.
 
@@ -99,7 +99,7 @@ These commands are commonly used by system administrators but are also frequentl
 
 ---
 
-# Endpoint Discovery Activity
+## Endpoint Discovery Activity
 
 Further investigation revealed additional discovery commands executed from the same user session.
 
@@ -121,7 +121,7 @@ The investigation focused on determining whether these commands were executed by
 
 ---
 
-# PowerShell Investigation
+## PowerShell Investigation
 
 Additional PowerShell activity was observed during the investigation.
 
@@ -145,7 +145,7 @@ These generated additional Sysmon process creation events that were successfully
 
 ---
 
-# Encoded PowerShell Execution
+## Encoded PowerShell Execution
 
 One process immediately stood out during the investigation.
 
@@ -170,7 +170,7 @@ No additional malicious behavior was identified.
 
 ---
 
-# Process Tree Analysis
+## Process Tree Analysis
 
 Sysmon telemetry allowed reconstruction of the execution chain.
 
@@ -191,7 +191,7 @@ No abnormal parent-child relationships or suspicious execution chains were ident
 
 ---
 
-# Account Management Activity
+## Account Management Activity
 
 To generate additional Windows Security telemetry, a temporary local account was created.
 
@@ -215,7 +215,7 @@ This activity generated Windows Security events that were successfully correlate
 
 ---
 
-# Event Correlation
+## Event Correlation
 
 During the investigation, Sysmon events were correlated with Windows Security logs.
 
@@ -232,7 +232,7 @@ Correlating multiple log sources provided a more complete picture of endpoint ac
 
 ---
 
-# Timeline of Activity
+## Timeline of Activity
 
 | Time  | Activity                    |
 | ----- | --------------------------- |
@@ -247,7 +247,7 @@ Correlating multiple log sources provided a more complete picture of endpoint ac
 
 ---
 
-# Indicators Observed
+## Indicators Observed
 
 | Indicator               | Observation                        |
 | ----------------------- | ---------------------------------- |
@@ -262,7 +262,7 @@ Correlating multiple log sources provided a more complete picture of endpoint ac
 
 ---
 
-# MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 | Tactic    | Technique                            |
 | --------- | ------------------------------------ |
@@ -274,7 +274,7 @@ Correlating multiple log sources provided a more complete picture of endpoint ac
 
 ---
 
-# Analyst Assessment
+## Analyst Assessment
 
 Based on the available evidence:
 
@@ -289,7 +289,7 @@ The activity was determined to be **simulated administrative behavior performed 
 
 ---
 
-# Recommendations
+## Recommendations
 
 Following the investigation, the following defensive measures are recommended:
 
@@ -302,11 +302,7 @@ Following the investigation, the following defensive measures are recommended:
 
 ---
 
-
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 This investigation strengthened practical skills in:
 

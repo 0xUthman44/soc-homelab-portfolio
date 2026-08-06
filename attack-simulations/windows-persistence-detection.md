@@ -10,7 +10,7 @@ Given the nature of the observed activity, an investigation was initiated to det
 
 ---
 
-# Investigation Objectives
+## Investigation Objectives
 
 The objectives of this investigation were to:
 
@@ -25,7 +25,7 @@ The objectives of this investigation were to:
 
 ---
 
-# Environment Architecture
+## Environment Architecture
 
 ```text
 Windows 10 Endpoint
@@ -45,7 +45,7 @@ SOC Investigation
 
 ---
 
-# Detection
+## Detection
 
 Routine monitoring within Wazuh identified multiple events associated with common Windows persistence techniques originating from the monitored endpoint.
 
@@ -84,7 +84,7 @@ Sysmon Process Creation events, registry telemetry, command-line arguments, and 
 
 ---
 
-# Initial System Verification
+## Initial System Verification
 
 Before analyzing the persistence-related events, the health of the monitored endpoint and its telemetry pipeline was verified to ensure that endpoint logs were being collected successfully.
 
@@ -99,7 +99,7 @@ Get-Service WazuhSvc
 The endpoint returned the expected system information, and the Wazuh agent was confirmed to be running. Review of the Wazuh dashboard verified that Sysmon telemetry was being successfully collected and indexed, providing confidence that subsequent investigative findings were based on complete and reliable endpoint data.
 <img width="1920" height="144" alt="Screenshot (759)" src="https://github.com/user-attachments/assets/737e5228-f448-4cdd-b8b3-6ba992debadc" />
 *Figure : Verification that the Wazuh Agent service is running on the monitored endpoint.*
-# Registry Run Key Investigation
+## Registry Run Key Investigation
 
 Analysis of the persistence-related alerts identified a modification to the Windows **Run** registry key, indicating that an application had been configured to execute automatically during user logon.
 
@@ -148,7 +148,7 @@ Following the removal, additional threat hunting was performed within Wazuh to v
 
 Analysis of the corresponding Sysmon registry events confirmed that the registry value was successfully removed. Review of the surrounding telemetry did not identify any additional registry modifications or persistence mechanisms requiring further investigation, indicating that the endpoint had been returned to its expected configuration.
 <img width="1920" height="146" alt="Screenshot (762)" src="https://github.com/user-attachments/assets/14cf98be-86e7-49b3-97ea-f48909268ef8" />
-# Scheduled Task Investigation
+## Scheduled Task Investigation
 
 Analysis of the endpoint telemetry identified the creation of a scheduled task configured to execute automatically during user logon.
 
@@ -198,7 +198,7 @@ Analysis of the corresponding Sysmon telemetry confirmed that the scheduled task
 
 Based on the available evidence, the scheduled task persistence mechanism was successfully removed, and no residual scheduled task persistence was identified on the monitored endpoint.
 <img width="1920" height="150" alt="Screenshot (767)" src="https://github.com/user-attachments/assets/6c2e9db5-165f-4b2c-bc2b-39e542a6aa0e" />
-# Windows Service Investigation
+## Windows Service Investigation
 
 Further analysis of the endpoint telemetry identified the creation of a new Windows service on the monitored endpoint.
 
@@ -269,7 +269,7 @@ The figure below shows the Sysmon Process Creation event associated with the rem
 > **Figure :** Wazuh Threat Hunting results showing the removal of the **SOCService** Windows service and confirming successful remediation of the persistence mechanism.
 <img width="1920" height="162" alt="Screenshot (771)" src="https://github.com/user-attachments/assets/2d236986-0f89-4484-bb4e-87fbcd214110" />
 
-# Startup Folder Persistence Investigation
+## Startup Folder Persistence Investigation
 
 As part of the investigation, additional analysis was conducted to determine whether the endpoint had been configured to establish persistence through the Windows Startup folder.
 
@@ -301,7 +301,7 @@ The figure below shows the Startup folder containing the shortcut configured to 
 
 <img width="1920" height="316" alt="Screenshot (772)" src="https://github.com/user-attachments/assets/4d4a8488-086d-47b1-bf2f-fe4322b65ada" />
 
-# Process Tree Analysis
+## Process Tree Analysis
 
 One of the key objectives of the investigation was to reconstruct the process execution chain that resulted in the Registry Run Key modification.
 
@@ -327,8 +327,7 @@ In this case, the reconstructed process hierarchy provided sufficient context to
 <img width="1920" height="233" alt="Screenshot (775)" src="https://github.com/user-attachments/assets/b23ae099-98cb-4aa5-a42e-63423b28474e" />
 
 
-
-# Threat Hunting
+## Threat Hunting
 
 Following the identification of persistence-related activity, a targeted threat hunting exercise was conducted within the Wazuh dashboard to determine the process responsible for the observed registry modification and to identify any additional indicators of persistence across the monitored endpoint.
 
@@ -370,7 +369,7 @@ The figure below shows the results of the **process.name:reg.exe** threat huntin
 <img width="1920" height="817" alt="Screenshot (774)" src="https://github.com/user-attachments/assets/ec5e7ebb-3445-4524-9758-897e7a3e8fd6" />
 
 
-# MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 Analysis of the endpoint telemetry identified multiple persistence techniques consistent with behaviors documented in the MITRE ATT&CK framework. Mapping the observed activity to MITRE ATT&CK provides standardized context for understanding how adversaries establish persistence, maintain access, and survive system reboots or user logoff events.
 
@@ -384,7 +383,7 @@ The identified techniques closely align with persistence behaviors frequently ob
 
 ---
 
-# Analyst Assessment
+## Analyst Assessment
 
 The investigation confirmed the execution of multiple persistence mechanisms on the monitored Windows endpoint, including Registry Run Key modification, scheduled task creation, Windows service creation, and Startup folder persistence.
 
@@ -398,7 +397,7 @@ Based on the available evidence, the endpoint telemetry provided complete visibi
 
 ---
 
-# Recommendations
+## Recommendations
 
 Based on the findings of this investigation, the following defensive measures are recommended to improve endpoint visibility and strengthen the organization's ability to detect persistence-related activity:
 
@@ -413,7 +412,7 @@ Based on the findings of this investigation, the following defensive measures ar
 
 ---
 
-# Learning Outcomes
+## Learning Outcomes
 
 This investigation provided practical experience in detecting, investigating, and analyzing Windows persistence techniques using endpoint telemetry collected by Sysmon and centralized within Wazuh.
 

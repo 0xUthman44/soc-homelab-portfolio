@@ -16,7 +16,7 @@ The system supports:
 
 ---
 
-# Objective
+## Objective
 
 The Windows 10 virtual machine was configured to support:
 
@@ -30,7 +30,7 @@ The Windows 10 virtual machine was configured to support:
 
 ---
 
-# Virtual Machine Configuration
+## Virtual Machine Configuration
 
 | Setting                 | Value                        |
 | ----------------------- | ---------------------------- |
@@ -43,7 +43,7 @@ The Windows 10 virtual machine was configured to support:
 
 ---
 
-# Network Configuration
+## Network Configuration
 
 The Windows 10 virtual machine operates within the isolated SOC homelab subnet:
 
@@ -61,10 +61,9 @@ All systems are configured on the same internal VirtualBox network to allow:
 * attack simulation workflows
 
 
-
 ---
 
-# Internet Connectivity
+## Internet Connectivity
 
 The Windows 10 VM retains outbound internet access through a secondary VirtualBox NAT adapter.
 
@@ -80,7 +79,7 @@ while maintaining an isolated internal lab environment.
 
 ---
 
-# System Preparation
+## System Preparation
 
 Initial configuration steps included:
 
@@ -92,7 +91,7 @@ Initial configuration steps included:
 
 ---
 
-# Connectivity Verification
+## Connectivity Verification
 
 Internal network communication verified using:
 
@@ -103,7 +102,7 @@ ping 192.168.56.102 (Ubuntu DVWA)
 
 ---
 
-# Wazuh Agent Installation
+## Wazuh Agent Installation
 
 The Windows endpoint was onboarded into Wazuh SIEM using the Wazuh Windows agent.
 
@@ -117,7 +116,7 @@ The agent enables:
 
 ---
 
-# Windows Event Monitoring
+## Windows Event Monitoring
 
 The Windows endpoint generates telemetry from:
 
@@ -132,7 +131,7 @@ This data is forwarded to Wazuh for centralized monitoring and investigation.
 
 ---
 
-# Operational Role in the Lab
+## Operational Role in the Lab
 
 The Windows 10 VM functions as a monitored enterprise endpoint within the SOC environment.
 
@@ -147,7 +146,7 @@ The system is used to:
 
 ---
 
-# Security Considerations
+## Security Considerations
 
 The Windows 10 VM is isolated within the internal VirtualBox lab network and is not directly exposed externally.
 
@@ -160,8 +159,7 @@ This ensures:
 
 ---
 
-# Screenshots
-
+## Screenshots
 
 
 <img width="1920" height="902" alt="Screenshot (683)" src="https://github.com/user-attachments/assets/71ed02f6-ba10-412e-b153-4aca12e5deef" />
@@ -171,7 +169,7 @@ This ensures:
 
 ---
 
-# Learning Outcomes
+## Learning Outcomes
 
 * Windows endpoint monitoring
 * SIEM integration

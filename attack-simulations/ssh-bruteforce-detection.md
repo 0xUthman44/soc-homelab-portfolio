@@ -15,7 +15,7 @@ This exercise provided practical experience with:
 
 ---
 
-# Objective
+## Objective
 
 The primary objectives of this exercise were to:
 
@@ -29,7 +29,7 @@ The primary objectives of this exercise were to:
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | Component     | Role                 | IP Address     |
 | ------------- | -------------------- | -------------- |
@@ -39,7 +39,7 @@ The primary objectives of this exercise were to:
 
 ---
 
-# Attack Flow
+## Attack Flow
 
 ```text
 Kali Linux
@@ -58,7 +58,7 @@ Wazuh SIEM
 
 ---
 
-# Phase 1 – Verify SSH Service
+## Phase 1 – Verify SSH Service
 
 The SSH service was verified on the Ubuntu server.
 
@@ -88,7 +88,7 @@ sudo systemctl enable ssh
 
 ---
 
-# Verify SSH is Listening
+## Verify SSH is Listening
 
 The SSH service was confirmed to be listening on port **22**.
 
@@ -105,7 +105,7 @@ LISTEN ... :22
 
 ---
 
-# Test SSH Connectivity
+## Test SSH Connectivity
 
 Connectivity from the Kali Linux VM was verified.
 
@@ -119,7 +119,7 @@ Receiving a password prompt confirmed successful connectivity.
 
 ---
 
-# Phase 2 – Verify Authentication Logging
+## Phase 2 – Verify Authentication Logging
 
 Ubuntu stores SSH authentication events in:
 
@@ -151,7 +151,7 @@ These logs confirm that Ubuntu was generating telemetry for Wazuh to ingest.
 
 ---
 
-# Phase 3 – Verify Hydra Wordlist
+## Phase 3 – Verify Hydra Wordlist
 
 The available wordlists were verified.
 
@@ -173,7 +173,7 @@ ls /usr/share/wordlists/rockyou.txt
 
 ---
 
-# Phase 4 – Launch the Brute Force Attack
+## Phase 4 – Launch the Brute Force Attack
 
 A small custom password list was created to speed up testing.
 
@@ -191,7 +191,7 @@ This generated multiple authentication attempts against the Ubuntu SSH service.
 
 ---
 
-# Phase 5 – Monitor the Attack
+## Phase 5 – Monitor the Attack
 
 Authentication logs were monitored in real time.
 
@@ -211,7 +211,7 @@ These entries confirmed that repeated authentication attempts were reaching the 
 
 ---
 
-# Phase 6 – Investigate in Wazuh
+## Phase 6 – Investigate in Wazuh
 
 The generated telemetry was investigated using the Wazuh Dashboard.
 
@@ -239,7 +239,7 @@ This investigation helped identify:
 
 ---
 
-# Detection Indicators
+## Detection Indicators
 
 The following indicators were observed.
 
@@ -256,7 +256,7 @@ The following indicators were observed.
 
 ---
 
-# SOC Analyst Investigation
+## SOC Analyst Investigation
 
 ## Incident Summary
 
@@ -268,7 +268,7 @@ No successful authentication events were identified during the investigation.
 
 ---
 
-# Investigation Findings
+## Investigation Findings
 
 | Question                  | Finding                |
 | ------------------------- | ---------------------- |
@@ -282,7 +282,7 @@ No successful authentication events were identified during the investigation.
 
 ---
 
-# Timeline
+## Timeline
 
 | Time  | Activity                              |
 | ----- | ------------------------------------- |
@@ -293,7 +293,7 @@ No successful authentication events were identified during the investigation.
 
 ---
 
-# Indicators of Compromise (IOCs)
+## Indicators of Compromise (IOCs)
 
 * Source IP Address
 * Destination IP Address
@@ -305,7 +305,7 @@ No successful authentication events were identified during the investigation.
 
 ---
 
-# MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 | Tactic                           | Technique              |
 | -------------------------------- | ---------------------- |
@@ -314,7 +314,7 @@ No successful authentication events were identified during the investigation.
 
 ---
 
-# Impact Assessment
+## Impact Assessment
 
 No unauthorized access was obtained during this exercise.
 
@@ -322,7 +322,7 @@ However, repeated authentication failures indicate an active credential attack a
 
 ---
 
-# Recommendations
+## Recommendations
 
 Following the investigation, the following defensive measures are recommended:
 
@@ -336,7 +336,7 @@ Following the investigation, the following defensive measures are recommended:
 
 ---
 
-# Issues Encountered
+## Issues Encountered
 
 | Issue                   | Resolution                                                               |
 | ----------------------- | ------------------------------------------------------------------------ |
@@ -346,10 +346,7 @@ Following the investigation, the following defensive measures are recommended:
 | wazuh agent misconfig   | configured wazuh agent to monitor auth.log                               |
 ---
 
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 Through this exercise, I gained practical experience with:
 

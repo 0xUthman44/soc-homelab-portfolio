@@ -16,7 +16,7 @@ Suricata complements Wazuh SIEM by generating network telemetry that can be anal
 
 ---
 
-# Objective
+## Objective
 
 The primary goals of deploying Suricata were:
 
@@ -30,10 +30,7 @@ The primary goals of deploying Suricata were:
 
 ---
 
-
----
-
-# Suricata Deployment Location
+## Suricata Deployment Location
 
 Suricata was installed on the Ubuntu-based DVWA server within the homelab environment.
 
@@ -59,7 +56,7 @@ This architecture improved visibility into:
 
 ---
 
-# Monitored Traffic Flow
+## Monitored Traffic Flow
 
 ```text id="u9m4x1"
 Kali Linux  --->  DVWA + Suricata  --->  Wazuh SIEM
@@ -75,7 +72,7 @@ This enabled realistic IDS alert generation during attack simulation exercises.
 
 ---
 
-# Installation
+## Installation
 
 Suricata installed using:
 
@@ -93,7 +90,7 @@ suricata --build-info
 
 ---
 
-# Service Verification
+## Service Verification
 
 Suricata service status checked using:
 
@@ -111,7 +108,7 @@ sudo systemctl start suricata
 
 ---
 
-# Network Interface Configuration
+## Network Interface Configuration
 
 Available interfaces identified using:
 
@@ -131,7 +128,7 @@ enp0s8
 
 ---
 
-# Suricata Configuration
+## Suricata Configuration
 
 Primary configuration file:
 
@@ -144,7 +141,7 @@ Network interface updated within the configuration file to monitor internal lab 
 
 ---
 
-# Rule Updates
+## Rule Updates
 
 Suricata rule sets updated using:
 
@@ -157,7 +154,7 @@ This downloaded and applied the latest IDS detection rules.
 
 ---
 
-# Alert Logging
+## Alert Logging
 
 Suricata alerts stored within:
 
@@ -176,7 +173,7 @@ Key log files include:
 
 ---
 
-# Traffic Monitoring
+## Traffic Monitoring
 
 Suricata monitored traffic between:
 
@@ -194,7 +191,7 @@ This enabled detection of:
 
 ---
 
-# Integration with Wazuh
+## Integration with Wazuh
 
 Suricata alerts can be ingested into Wazuh SIEM for:
 
@@ -208,11 +205,7 @@ This improves overall network and endpoint visibility within the homelab environ
 
 ---
 
-
-
----
-
-# Operational Role in the Lab
+## Operational Role in the Lab
 
 Suricata functions as the primary network intrusion detection platform within the SOC environment.
 
@@ -227,7 +220,7 @@ The platform is used to:
 
 ---
 
-# Security Considerations
+## Security Considerations
 
 Suricata operates within the isolated internal VirtualBox network to safely monitor simulated attack traffic generated during lab exercises.
 
@@ -241,8 +234,7 @@ This enables:
 ---
 
 
-
-# Learning Outcomes
+## Learning Outcomes
 
 * IDS deployment and configuration
 * Network traffic monitoring

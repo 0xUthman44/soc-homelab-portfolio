@@ -1,0 +1,47 @@
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === Windows ===
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === Python cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.venv/
+venv/
+
+# === Temporary / editor files ===
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.idea/
+
+# === OS-generated archives (avoid committing large exports accidentally) ===
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip

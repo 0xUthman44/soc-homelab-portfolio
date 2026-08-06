@@ -17,7 +17,7 @@ The VM is used to simulate realistic attacker activity against internal lab syst
 
 ---
 
-# Objective
+## Objective
 
 The Kali Linux virtual machine was configured to support:
 
@@ -31,7 +31,7 @@ The Kali Linux virtual machine was configured to support:
 
 ---
 
-# Virtual Machine Configuration
+## Virtual Machine Configuration
 
 | Setting                 | Value                        |
 | ----------------------- | ---------------------------- |
@@ -44,7 +44,7 @@ The Kali Linux virtual machine was configured to support:
 
 ---
 
-# Network Configuration
+## Network Configuration
 
 The Kali Linux virtual machine operates within the isolated SOC homelab subnet:
 
@@ -53,11 +53,9 @@ The Kali Linux virtual machine operates within the isolated SOC homelab subnet:
 ```
 
 
-
-
 ---
 
-# Internet Connectivity
+## Internet Connectivity
 
 The virtual machine retains outbound internet access through a secondary VirtualBox NAT adapter.
 
@@ -73,7 +71,7 @@ while still maintaining an isolated internal lab environment for attack simulati
 
 ---
 
-# Connectivity Verification
+## Connectivity Verification
 
 Internal communication validated using:
 
@@ -82,12 +80,9 @@ ping 192.168.56.102 (Ubuntu DVWA)
 ```
 
 
-
-
-
 ---
 
-# System Update
+## System Update
 
 Initial package updates performed using:
 
@@ -97,7 +92,7 @@ sudo apt update && sudo apt upgrade -y
 
 ---
 
-# Installed Tooling
+## Installed Tooling
 
 The Kali Linux environment includes commonly used offensive security and analysis tools.
 
@@ -113,7 +108,7 @@ The Kali Linux environment includes commonly used offensive security and analysi
 
 ---
 
-# Operational Role in the Lab
+## Operational Role in the Lab
 
 Kali Linux functions as the primary attack simulation system within the environment.
 
@@ -128,7 +123,7 @@ The VM is used to:
 
 ---
 
-# Security Considerations
+## Security Considerations
 
 The Kali Linux VM is isolated within an internal VirtualBox network and is not exposed directly to external systems.
 
@@ -141,10 +136,7 @@ This ensures:
 
 ---
 
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 * Linux system administration
 * Offensive security tooling

@@ -16,7 +16,7 @@ This exercise focused on:
 
 ---
 
-# Objective
+## Objective
 
 The goals of this simulation were:
 
@@ -29,7 +29,7 @@ The goals of this simulation were:
 
 ---
 
-# Lab Environment
+## Lab Environment
 
 | System      | Role                  |   IP Address   |
 | ----------- | --------------------- | -------------  |
@@ -40,7 +40,7 @@ The goals of this simulation were:
 
 ---
 
-# Tool Used
+## Tool Used
 
 | Tool | Purpose                                        |
 | ---- | ---------------------------------------------- |
@@ -48,7 +48,7 @@ The goals of this simulation were:
 
 ---
 
-# Host Discovery Scan
+## Host Discovery Scan
 
 Initial host discovery performed using:
 
@@ -61,7 +61,7 @@ This scan identified active systems within the internal lab subnet.
 
 ---
 
-# Port Scan
+## Port Scan
 
 Port enumeration against the DVWA server performed using:
 
@@ -75,7 +75,7 @@ This identified open services exposed by the target system.
 
 ---
 
-# Service Enumeration
+## Service Enumeration
 
 Version detection scan performed using:
 
@@ -94,7 +94,7 @@ This provided:
 
 ---
 
-# Example Findings
+## Example Findings
 
 Example services identified during enumeration:
 
@@ -106,7 +106,7 @@ Example services identified during enumeration:
 
 ---
 
-# Detection Engineering Relevance
+## Detection Engineering Relevance
 
 The Nmap activity generated telemetry that can be used to:
 
@@ -118,7 +118,7 @@ The Nmap activity generated telemetry that can be used to:
 
 ---
 
-# Wazuh Monitoring
+## Wazuh Monitoring
 
 Relevant telemetry sources include:
 
@@ -131,7 +131,7 @@ These logs can be analyzed inside Wazuh to investigate attacker behavior.
 
 ---
 
-# Operational Impact
+## Operational Impact
 
 Reconnaissance activity is often an early-stage attacker behavior associated with:
 
@@ -144,11 +144,7 @@ Monitoring this activity improves visibility into potential malicious behavior.
 
 ---
 
-
-
----
-
-# Learning Outcomes
+## Learning Outcomes
 
 * Network reconnaissance techniques
 * Port scanning methodology
